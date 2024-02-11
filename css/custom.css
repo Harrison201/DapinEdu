@@ -1,0 +1,266 @@
+body {
+  margin: 0;
+  padding: 0;
+  font-family: Outfit;
+  background-color: #fdfafd;
+}
+.current  {
+  border-bottom: 5px solid orange;
+}
+button {
+  background-color: #544CCA;
+  padding: 8px 20px;
+  border-radius: 10px;
+  color: white;
+  border: none;
+  /* width: 100%; */
+}
+#topbar {
+  background-color: #E3DFFF;
+  padding: 1px;
+  text-align: center;
+  font-weight: 600;
+}
+.navbar {
+  background-color: #ffffff;
+  color: white;
+  display: flex;
+  align-items: center;
+  /* padding: 10px; */
+}
+
+.container2 {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 90%;
+  margin: 0 auto;
+}
+
+.logo img {
+  height: 120px;
+}
+
+.menu {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+}
+
+.menu a {
+  color: rgb(0, 0, 0);
+  text-decoration: none;
+  margin: 0 10px;
+  border-bottom: 10 px black;
+}
+
+.signin button {
+  background-color: #ffffff;
+  color: #544CCA;
+  border: 1px solid #787680;
+  padding: 8px 20px;
+  font-weight: 500;
+  border-radius: 20px;
+  cursor: pointer;
+}
+
+.burger {
+  display: none;
+  flex-direction: column;
+  cursor: pointer;
+}
+
+.line {
+  width: 25px;
+  height: 3px;
+  background-color: white;
+  margin: 3px 0;
+}
+
+.FirstSection {
+  background-color: #fdfafd;
+}
+
+.FirstSection h1 {
+  font-weight: 700;
+  
+}
+.FirstSection span{
+  color: #544CCA;
+  text-decoration: underline orange;
+  
+}
+.FirstSection p {
+  text-align: center;
+  font-size: 20px
+}
+
+.past-clients h5 {
+  font-weight: 700;
+}
+.past-clients {
+  background-color: #D7D6E9; /* Grey background */
+  padding: 20px;
+  text-align: center;
+}
+
+
+.client-images {
+  margin-top: 20px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+.client-images img {
+  width: 150px; /* Adjust as needed */
+  height: auto;
+  margin: 10px;
+}
+.centered-content {
+  
+  text-align: center;
+}
+.image-container {
+  margin-top: 60px;
+  text-align: center;
+}
+.image-container img {
+  border-radius: 6%; /* Adjust border radius as needed */
+  /* height: 200px; */
+}
+
+.centered-content h2 {
+  font-weight: 700;
+}
+.centered-content p {
+  text-align: center;
+  font-size: 20px
+}
+.categories img {
+  height: 300px;
+  width: 360px;
+  border-radius: 10%;
+}
+.categories p {
+  font-weight: 700;
+}
+.holistic1 {
+  background-color: #F3EEFF;
+}
+.holistic1 h1 {
+  color: #DF7400;
+  font-weight: 700;
+}
+.holistic1 p {
+ font-weight: 300;
+ font-size: 95;
+ padding: 40;
+}
+.accordion {
+  border: 1px solid #ccc;
+}
+
+.accordion-item {
+  border-bottom: 1px solid #ccc;
+}
+
+.accordion-header {
+  background-color: #f4f4f4;
+  padding: 10px;
+  cursor: pointer;
+}
+
+.accordion-content {
+  padding: 10px;
+  display: none;
+}
+
+
+
+
+
+/* Contact page */
+.ContacHeading h1{
+  background-color: #fdfafd;
+  font-weight: 700;
+  padding: 40px;
+  /* text-decoration: underline orange; */
+  
+}
+.ContacHeading span{
+  color: #544CCA;
+  font-weight: 700;
+  /* text-decoration: underline orange; */
+}
+.formInfo h4 {
+  font-weight: 700;
+}
+.formInfo p {
+  font-weight: 400;
+  font-size: 20px;
+}
+.form label {
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+.form input{
+  border: 1px solid grey;
+  padding: 12px;
+  width: 75%; 
+}
+.form input:focus{
+  border: 1px solid #544CCA;;
+}
+
+
+
+
+
+
+
+
+
+
+
+.footer {
+  margin-top: 80px;
+  background-color: #1C1B1F;
+  color: #fff;
+  padding: 50px 0;
+}
+.footer p {
+  margin-top: 10px;
+}
+.footer ul li {
+  line-height: 40px;
+}
+
+
+
+
+
+
+@media (max-width: 768px) {
+  .menu {
+    display: none;
+  }
+
+  .burger {
+    display: flex;
+  }
+
+  .navbar.active .menu {
+    display: flex;
+    flex-direction: column;
+    background-color: #333;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 100%;
+    padding: 10px 0;
+  }
+
+  .navbar.active .menu a {
+    margin: 5px;
+  }
+}
